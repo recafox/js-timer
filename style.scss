@@ -1,51 +1,7 @@
-@import './helpers/reset';
-@import './helpers/variables';
+@import './helpers/_reset';
+@import './helpers/_variables';
+@import './helpers/_modules';
 
-.d-flex{
-    display:flex;
-}
-.flex-column{
-    flex-direction: column;
-}
-
-.flex-row{
-    flex-direction: row;
-}
-.justify-content-center{
-    justify-content: center;
-}
-.align-items-center{
-    align-items: center;
-}
-
-.p-absolute{
-    position: absolute;
-}
-
-.p-relative{
-    position: relative;
-}
-
-.text-center{
-    text-align: center;
-}
-.text-right{
-    text-align: right;
-}
-.text-left{
-    text-align: left;
-}
-
-.text-l{
-    font-size: $font-l;
-}
-
-.text-m{
-    font-size: $font-m;
-}
-.border{
-    border:1px solid black;
-}
 
 .container{
     width:640px;

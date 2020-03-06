@@ -2,8 +2,8 @@ class Timer{
     constructor(inputMin,inputSec, startBtn, pauseBtn, resetBtn, callbacks){
         this.inputMin =inputMin;
         this.inputSec =inputSec;  
-        this.totalDuration;
-        this.timeLeft;
+        this.totalDuration = 0;
+        this.timeLeft = 0;
         this.resetNum = 0;
         this.startBtn = startBtn;
         this.pauseBtn = pauseBtn;
@@ -47,6 +47,7 @@ class Timer{
         }
 
         minute = parseInt(this.inputMin.value);
+
         this.totalDuration = minute*60 + second;
         this.timeLeft = this.totalDuration;
     };
@@ -95,6 +96,8 @@ class Timer{
     reset = ()=>{
         this.inputMin.value = this.resetNum;
         this.inputSec.value = this.resetNum;
+        this.totalDuration = 0;
+        this.timeLeft = 0;
         if(this.onReset){
             this.onReset();
         }
