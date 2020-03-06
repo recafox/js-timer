@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS - 簡易計時器</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/20e81cfc4b.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="container p-relative d-flex justify-content-center">
+                <div class="container--group p-absolute">
+                    <div class="container--inputGroup d-flex align-items-center">
+                        <input class='container--input text-l text-right' id = 'durationMin' >
+                        <span class='text-l'>：</span>
+                        <input class='container--input text-l text-left' id='durationSec' οninput="if(value>59)value=59" >
+                    </div>
+                    <div class="container--btnGroup d-flex justify-content-center">
+                        <button class='container--button text-m' id = 'start'><i class='fas fa-play'></i></button>
+                        <button class='container--button text-m' id ='pause'><i class='fas fa-pause'></i></button>
+                        <button class='container--button text-m' id='reset'><i class="fas fa-redo-alt"></i></button>
+                    </div>
+                </div>
+
+                <svg height='400' width='400'>
+                    <circle 
+                        r='190' 
+                        cx='200' 
+                        cy='200'
+                        fill='transparent'
+                        stroke='#D95D39'
+                        stroke-width='15' 
+                        transform='rotate(-90 200 200)'>
+                    </circle>
+                </svg>
+        </div>
+        
+
+        <script src="timer.js" async defer></script>
+        <script src="all.js" async defer></script>
+    </body>
+</html>

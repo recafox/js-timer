@@ -1,0 +1,72 @@
+@import './helpers/reset';
+@import './helpers/variables';
+
+.d-flex{
+    display:flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+
+.text-l{
+    font-size: $font-l;
+}
+
+.text-m{
+    font-size: $font-m;
+}
+.border{
+    border:1px solid black;
+}
+
+.container{
+    width:640px;
+    margin:3rem auto;
+}
+
+.container--group{
+    transform:translateY(-50%);
+    top:50%;
+    width:350px;
+    .container--input{
+        width:50%;
+    }
+    .container--button{
+        padding:0.5rem 1rem;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
