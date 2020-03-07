@@ -26,6 +26,7 @@ class Timer{
     setTotal = () =>{
         let second;
         let minute;
+        
         if(this.inputMin.value.length===0){
             this.inputMin.value = 0;
         }
