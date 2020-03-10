@@ -4,6 +4,8 @@
 
 [demo](https://recafox.github.io/js-timer/)
 
+[JS - 計時器與happy path](https://recafox.github.io/2020/03/07/timer-and-happy-path/)
+
 
 ### 這個作品練習了哪些東西？
 
